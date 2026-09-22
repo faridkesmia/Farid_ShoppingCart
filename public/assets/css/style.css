@@ -1,0 +1,18 @@
+﻿img{
+	max-width:100%;
+	height:auto;
+	background:lightblue;
+	background:radial-gradient(white 30%,lightblue 70%);
+}
+#icon{
+	background:transparent;
+	height:25px;
+	width: 25px;
+	margin-top: -7px;
+}
+#cart_count{
+	text-align:center;
+	padding: 0 0.9rem 0.1rem 0.9rem;
+	border-radius:3rem;
+	background-color: #797978 !important;
+}
