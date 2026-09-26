@@ -71,12 +71,15 @@ The Cart page displays all products selected by the user.
 
 Each item contains:
 
-Information	Description
-🖼️ Image	Product image
-🏷️ Name	Product name
-💰 Price	Price of one item
-🔢 Quantity	Number of items
-💵 Total	Price × Quantity
+<table>
+    <tr> <th>Information</th>  <th>Description</th> </tr>
+    <tr> <td>🖼️ Image</td>  <td>Product image</td> </tr>
+    <tr><td>🏷️ Name</td> <td>	Product name</td></tr>
+     <tr><td>💰 Price</td> <td>Price of one item</td></tr>
+     <tr><td>🔢 Quantity</td> <td>	Number of items</td></tr>
+     <tr><td>💵 Total</td> <td>Price × Quantity</td></tr>
+</table>
+
 
 The final order total is automatically calculated and displayed below the cart.
 
@@ -90,7 +93,7 @@ Clear the entire cart
 
 Proceed to payment
 
-💳 Checkout & Stripe Payment
+<h3>💳 Checkout & Stripe Payment</h3>
 
 After reviewing their order, users can click Proceed to Payment to continue to checkout.
 
