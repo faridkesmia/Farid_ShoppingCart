@@ -1,59 +1,171 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<h1>🛒 Farid Shopping Cart</h1>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+A simple, attractive, and user-friendly e-commerce web application built with Laravel 12 and PHP 8.
 
-## About Laravel
+The application provides a complete shopping experience where users can browse categories, explore products, add items to their shopping cart, and proceed to checkout using the Stripe test payment gateway.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+<h1>📸 About the Project</h1>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+<strong>Farid Shopping Cart</strong> was developed as an e-commerce application to demonstrate the implementation of essential online shopping features using Laravel.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+The application allows customers to:
 
-## Learning Laravel
+Browse product categories
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+Explore products within each category
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+View product information
 
-## Laravel Sponsors
+Add products to a shopping cart
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+Review and manage their cart
 
-### Premium Partners
+Calculate the total order price
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+Proceed to payment through Stripe
 
-## Contributing
+Complete test payments using Stripe's test environment
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+The application also includes administrative functionality for adding new categories and products to the store.
 
-## Code of Conduct
+<h2>✨ Features</h2>
+<strong>🏠 Home Page</strong>
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+The home page serves as the welcome page of the application and provides users with an intuitive entry point to the online store.
 
-## Security Vulnerabilities
+<strong>📂 Categories</strong>
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+The Categories page displays the available product categories using an attractive card-based layout.
 
-## License
+Each category contains:
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+🖼️ Category image
+
+🏷️ Category name
+
+🔗 Access to the products belonging to that category
+
+The layout adapts according to the number of available categories.
+
+<strong>🛍️ Products</strong>
+
+When a user selects a category, they are redirected to the corresponding Products page.
+
+Products are displayed using individual cards containing:
+
+🖼️ Product image
+
+🏷️ Product name
+
+💰 Product price
+
+📝 Product description
+
+🛒 Add to Cart button
+
+Clicking Add to Cart adds the selected product to the shopping cart.
+
+<strong>🛒 Shopping Cart</strong>
+
+The Cart page displays all products selected by the user.
+
+Each item contains:
+
+Information	Description
+🖼️ Image	Product image
+🏷️ Name	Product name
+💰 Price	Price of one item
+🔢 Quantity	Number of items
+💵 Total	Price × Quantity
+
+The final order total is automatically calculated and displayed below the cart.
+
+Users can:
+
+Review their selected products
+
+Manage the items in their cart
+
+Clear the entire cart
+
+Proceed to payment
+
+💳 Checkout & Stripe Payment
+
+After reviewing their order, users can click Proceed to Payment to continue to checkout.
+
+The application redirects the customer to Stripe Checkout, where payment information can be entered and the transaction can be completed.
+
+<strong>⚠️ Important:</strong> This project uses a Stripe test secret key. Payments are therefore intended for development and testing purposes only. No real transactions should be made using this project.
+
+<strong>⚙️ Administration</strong>
+
+The application includes administrative panels that allow administrators to add new content to the store.
+
+Administrators can:
+
+➕ Add new categories
+
+➕ Add new products
+
+📦 Extend the store's product inventory
+
+🗄️ Database & Storage
+
+The application uses MySQL as its database management system.
+
+Database operations are handled using Laravel Eloquent ORM, which provides an expressive and convenient way to interact with the database and manage relationships between application models.
+
+<strong>🔐 Security</strong>
+
+The project takes advantage of Laravel's built-in security features, including:
+
+🔒 Secure password hashing
+
+🛡️ Middleware for authentication and authorization
+
+🗄️ Eloquent ORM for database interactions
+
+🔐 Access control for administrative functionality
+
+Laravel's built-in protection mechanisms against common web vulnerabilities
+
+<strong>🧰 Technologies & Tools</strong>
+Backend
+
+PHP 8
+
+Laravel 12
+
+Laravel Eloquent ORM
+
+Database
+
+MySQL
+
+Payment
+
+Stripe Checkout
+
+Stripe Test Environment
+
+Development Environment
+
+Visual Studio Code
+
+<strong>⚠️ Disclaimer</strong>
+
+This project is intended for educational and development purposes.
+
+The Stripe integration uses the Stripe test environment and should not be used for processing real payments without appropriate configuration and security measures.
+
+<strong>📄 License</strong>
+
+This project is available on GitHub for learning and development purposes.
+
+<strong>👨‍💻 Author</strong>
+
+Farid Kesmia
+
+<strong>GitHub:</strong>
+https://github.com/faridkesmia
