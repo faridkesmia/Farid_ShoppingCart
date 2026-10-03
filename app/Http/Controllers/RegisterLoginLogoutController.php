@@ -27,7 +27,8 @@ class RegisterLoginLogoutController extends Controller
          $user = User::create([
             'name'      =>  $request->name,
             'email'     =>  $request->email,
-            'password'  =>  Hash::make($request->password)
+            'password'  =>  Hash::make($request->password),
+            //'role'      =>  'admin'            # <<<<-----------------------this is  only for the administator
          ]);
          return redirect()->route('login')->with('status',' Welcome ,' .$request->name .' You can now Log in');
     }
