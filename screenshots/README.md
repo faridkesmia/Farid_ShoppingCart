@@ -1,8 +1,8 @@
 ## Screenshots
 ### Categpries Page
-![Categories](Categories/home.png)
+![Categories](Categories.png)
 ### Products
-![products](products/dashboard.png)
+![products](products.png)
 
 ### Cart Page
-![Cart](Cart/mobile.png)
+![Cart](Cart.png)
