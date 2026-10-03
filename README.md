@@ -170,5 +170,11 @@ This project is available on GitHub for learning and development purposes.
 
 Farid Kesmia
 
-<strong>GitHub:</strong>
-https://github.com/faridkesmia
+## Screenshots
+### Categpries Page
+![Categories](screenshots/Categories.jpg)
+### Products
+![products](screenshots/products.jpg)
+
+### Cart Page
+![Cart](screenshots/Cart.jpg)
