@@ -178,3 +178,6 @@ Farid Kesmia
 
 ### Cart Page
 ![Cart](screenshots/Cart.jpg)
+
+### Payment page
+![Cart](screenshots/payment.jpg)
